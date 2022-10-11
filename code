@@ -1,9 +1,9 @@
-INIM - Allarme
+## INIM - Allarme
 
-https://community.home-assistant.io/t/inim-alarm/60354/56
+## https://community.home-assistant.io/t/inim-alarm/60354/56
 
-Necessaria SmartLanG – credenziali default: admin pass 
-Stato dei sensori:	
+## Necessaria SmartLanG – credenziali default: admin pass 
+## Stato dei sensori:	
 rest:
   - resource:http://192.165.2.223/cgi-bin/web.cgi?mod=zone&par=now&user=youruser&pass=yourpass&code=yourcode
     scan_interval: 20
@@ -43,7 +43,7 @@ rest:
 ### il comando zone&par=now serve per recuperare lo stato
 
  
-Stato centrale:
+## Stato centrale:
 sensor:
   - platform: rest
     name: Stato Inim
@@ -69,7 +69,7 @@ sensor:
 ### il comando sce&par=now serve per recuperare lo stato
 
 
-Inserimento scenario:
+## Inserimento scenario:
 rest_command:
   inim_off: 
     url: "http://192.165.2.223/cgi-bin/web.cgi?mod=do_sce&par=1&user=youruser&pass=yourpass&code=yourcode”
@@ -86,7 +86,7 @@ rest_command:
 ### il comando do_sce&par=2 serve per inserire il terzo scenario
 
  
-Inserimento dal modulo allarm di home assistant tramite due automazioni in modo che se l’allarme dovesse essere inserito da altri apparecchi o app il pannello di home assistant venga aggiornato:
+## Inserimento dal modulo allarm di home assistant tramite due automazioni in modo che se l’allarme dovesse essere inserito da altri apparecchi o app il pannello di home assistant venga aggiornato:
 
 automation:
 - alias: A_Inim inserimento
