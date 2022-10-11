@@ -66,7 +66,8 @@ sensor:
     scan_interval: 5
     timeout: 4
 
-### il comando sce&par=now serve per recuperare lo stato
+### il comando sce&par=now serve per recuperare lo stato 
+######## rispettare gli spazi nell'indicazione precisa degli scenari tra gli apici ' ' es. 'Solo Giardino   '
 
 
 ## Inserimento scenario:
